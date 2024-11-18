@@ -20,6 +20,7 @@ import { login } from '../../redux/features/auth/authSlice';
 const HeroSection = () => {
 	const web3 = new Web3(window.ethereum);
 	const [referCode, setReferCode] = useState('');
+	const navigate = useNavigate();
 
 	const loggedInInfo = useSelector((state) => state?.auth);
 	const dispatch = useAppDispatch();
@@ -266,6 +267,8 @@ const HeroSection = () => {
 							referCode: registrationResponse?.data?.referCode,
 						})
 					);
+
+					navigate('/dashboard')
 				}
 				console.log('Server response:', tx);
 			} catch (error) {
