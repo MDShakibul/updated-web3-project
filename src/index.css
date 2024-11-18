@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('./assets/banner_bg2.png'); 
+  background-image: url('./assets/banner_bg2.png'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes the background fixed */
+  background-repeat: no-repeat;
+}
+
+/* Optional: Apply an overlay effect on the content */
+.content-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust for desired transparency */
+  padding: 2rem;
+  min-height: 100vh;
+}
